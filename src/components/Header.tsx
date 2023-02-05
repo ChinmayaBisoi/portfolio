@@ -26,7 +26,7 @@ const Header = (props: Props) => {
         initial={{ x: 300, opacity: 0, scale: 0.5 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 1.2 }}
-        className="flex items-center cursor-pointer hover:underline">
+        className="flex items-center cursor-pointer hover:underline underline-offset-4">
         <SocialIcon
           className="cursor-pointer"
           network="email"
