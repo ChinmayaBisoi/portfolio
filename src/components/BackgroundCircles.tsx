@@ -1,16 +1,26 @@
+import { motion } from "framer-motion";
 import React from "react";
 
 type Props = {};
 
 const BackgroundCircles = (props: Props) => {
   return (
-    <div className="relative flex items-center justify-center mt-32 z-0">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{
+        scale: [1, 2, 2, 3, 1],
+        opacity: [0.1, 0.2, 0.4, 0.8, 0.1, 1],
+        borderRadius: ["20%", "20%", "50%", "80%", "20%"],
+      }}
+      transition={{
+        duration: 2.5,
+      }}
+      className="relative flex items-center justify-center mt-44 z-0">
       <div className="absolute border border-[#333333] h-[150px] w-[150px] rounded-full animate-ping" />
-      {/* <div className="absolute border border-[#333333] h-[200px] w-[200px] rounded-full" /> */}
-      <div className="absolute border border-[#333333] h-[280px] w-[280px] rounded-full" />
-      <div className="absolute border border-brand h-[430px] w-[430px] rounded-full  opacity-20 animate-pulse" />
-      <div className="absolute border border-[#333333] h-[560px] w-[560px] rounded-full" />
-    </div>
+      <div className="absolute border border-[#333333] h-[240px] w-[240px] rounded-full" />
+      <div className="absolute border border-brand h-[380px] w-[380px] rounded-full  opacity-20 animate-pulse" />
+      <div className="absolute border border-[#333333] h-[550px] w-[550px] rounded-full" />
+    </motion.div>
   );
 };
 
