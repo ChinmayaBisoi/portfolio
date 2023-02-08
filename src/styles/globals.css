@@ -4,6 +4,27 @@
 
 @layer components {
   .heroBtn {
-    @apply hover:cursor-pointer hover:underline hover:text-white text-neutral-400 hover:bg-brand/20  md:px-6 md:py-1 border border-transparent md:hover:border-brand rounded-full;
+    @apply hover:cursor-pointer hover:underline hover:text-white text-neutral-400 hover:bg-brand-300  md:px-6 md:py-1 border border-transparent md:hover:border-brand rounded-full;
   }
+}
+
+/* Scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-bg-primary;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-brand;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-brand-900;
 }
