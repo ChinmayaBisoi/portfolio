@@ -19,7 +19,7 @@ const Hero = (props: Props) => {
   return (
     <div className="h-screen cursor-default px-4 flex flex-col items-center justify-center gap-y-4 text-center overflow-hidden">
       <BackgroundCircles />
-      <div className="flex flex-col items-center justify-center z-10 gap-y-8 -mt-20">
+      <div className="flex flex-col items-center justify-center z-10 gap-y-5 -mt-20">
         <Image
           src="/portfolio/chinu-new.png"
           height={128}

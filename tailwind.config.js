@@ -11,8 +11,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        brand: "#F49D1A",
-        "bg-primary": "#333333",
+        brand: {
+          100: "#F49D1A11",
+          200: "#F49D1A33",
+          300: "#F49D1A55",
+          400: "#F49D1A77",
+          DEFAULT: "#F49D1A",
+          100: "#F49D1A11",
+          100: "#F49D1A11",
+          100: "#F49D1A11",
+          900: "#f59607",
+        },
+        "bg-primary": "#242424",
       },
     },
   },
