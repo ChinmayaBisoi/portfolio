@@ -30,11 +30,11 @@ const Hero = (props: Props) => {
         <h2 className="uppercase text-neutral-400 hover:text-brand md:tracking-[12px] text-center font-semibold tracking-[8px]">
           Software Engineer
         </h2>
-        <h1 className="md:text-4xl text-2xl">
+        <h1 className="md:text-4xl font-poppins text-2xl">
           <span>{text}</span>
           <Cursor cursorColor="text-brand" />
         </h1>
-        <div className="flex items-center justify-center gap-x-6 text-sm">
+        <div className="flex font-roboto items-center justify-center gap-x-6 text-sm">
           <Link href={"#about"}>
             <div className="heroBtn">About</div>
           </Link>

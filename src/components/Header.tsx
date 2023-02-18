@@ -6,12 +6,12 @@ type Props = {};
 
 const Header = (props: Props) => {
   return (
-    <header className="sticky top-0 bg-bg-primary shadow-md text-gray-400 px-4 z-50 max-w-5xl mx-auto">
-      <nav className="flex items-center justify-between">
+    <header className="sticky top-0 bg-bg-primary-100 shadow-md text-gray-400 z-50">
+      <nav className="flex items-center justify-between max-w-5xl mx-auto px-4">
         <motion.div
           initial={{ x: -300, opacity: 0, scale: 0.5 }}
           animate={{ x: 0, opacity: 1, scale: 1 }}
-          transition={{ duration: 1.2 }}>
+          transition={{ duration: 0.8 }}>
           <SocialIcon
             url="https://twitter.com/C_bi__"
             bgColor="transparent"
@@ -26,7 +26,7 @@ const Header = (props: Props) => {
         <motion.div
           initial={{ x: 300, opacity: 0, scale: 0.5 }}
           animate={{ x: 0, opacity: 1, scale: 1 }}
-          transition={{ duration: 1.2 }}
+          transition={{ duration: 0.8 }}
           className="flex items-center cursor-pointer hover:underline underline-offset-4">
           <SocialIcon
             className="cursor-pointer"
